@@ -1,0 +1,12 @@
+{
+    "name":"escuelajs-reto-09",
+    "version":2,
+    "builds":[{ "src": "src/**/*", "use": "@now/node" }],
+    "routes":[{"src":"src/(.*)","dest":"src/$1"}],
+    "env":{
+        "DB_USER":"@platzi-store-db_user",
+        "DB_PASSWORD":"@platzi-store-db_pwd",
+        "DB_HOST":"@platzi-store-db_host",
+        "DB_NAME":"@platzi-store-db_name"
+    }
+}

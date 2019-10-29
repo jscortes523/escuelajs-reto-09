@@ -43,6 +43,17 @@ const productsMock = [
   },
 ];
 
+class ProductServiceMock{
+  getProducts(){
+    return Promise.resolve(productsMock)
+  }
+
+  create(){
+    return Promise.resolve(productsMock[0])
+  }
+}
+
 module.exports = {
+  ProductServiceMock,
   productsMock
 };
